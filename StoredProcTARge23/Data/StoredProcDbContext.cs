@@ -7,7 +7,7 @@ namespace StoredProcTARge23.Data
     public class StoredProcDbContext : DbContext
     {
         public StoredProcDbContext(DbContextOptions<StoredProcDbContext> options)
-            : base() { }
+            : base(options) { }
 
         public DbSet<Employee> Employees { get; set; }
     }
